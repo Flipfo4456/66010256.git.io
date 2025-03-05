@@ -3,45 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        .card-profile {
+            position: relative;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 80px; /* เพิ่มระยะห่างเพื่อให้มีที่สำหรับข้อมูล */
+        }
+
+        .profile-info {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            position: absolute;
+            top: 100%; /* ให้ข้อมูลแสดงผลใต้การ์ด */
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        .card-profile:hover .profile-info {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Schedule</h1>
-        <p id="currentDate"></p>
-        <p id="currentTime"></p>
+    <header class="head">
+        <h1>Profile</h1>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul class="nav-links">
+                <li><button>Home</button></li>
+                <li><button>About</button></li>
+                <li><button>Services</button></li>
+                <li><button>Contact</button></li>
+               
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section id="main">
+            <!-- Card Profile 1 -->
+            <div class="card-profile">
+                <img src="img/S__320479238_0.jpg" alt="Profile 1">
+                <p><strong>ชื่อ :</strong> กฤษณกร</p>
+                <p><strong>นามสกุล :</strong> พันธ์เสงี่ยม</p>
+                <div class="profile-info">
+                    <p><strong>เบอร์โทร :</strong> 094-905-7555</p>
+                    <p><strong>ช่องทางติดต่อ :</strong> Line : folk1590</p>
+                    <p><strong>อายุ :</strong> 20 ปี</p>
+                    <p><strong>รหัสนักศึกษา :</strong> 66010032</p>
+                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
+                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
+                </div>
+            </div>
+            <!-- Card Profile 2 -->
+            <div class="card-profile">
+                <img src="img/S__320479239_0.jpg" alt="Profile 2">
+                <p><strong>ชื่อ :</strong> ก้องภพ</p>
+                <p><strong>นามสกุล :</strong> นาราอัสนีกร</p>
+                <div class="profile-info">
+                    <p><strong>เบอร์โทร :</strong> 061-524-3000</p>
+                    <p><strong>ช่องทางติดต่อ :</strong> Line : pangpond910</p>
+                    <p><strong>อายุ :</strong> 20 ปี</p>
+                    <p><strong>รหัสนักศึกษา :</strong> 66010042</p>
+                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
+                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
+                </div>
+            </div>
+            <!-- Card Profile 3 -->
+            <div class="card-profile">
+                <img src="img/S__320479234_0.jpg" alt="Profile 3">
+                <p><strong>ชื่อ :</strong> จีราวิวัฒน์</p>
+                <p><strong>นามสกุล :</strong> วิหะคานนท์</p>
+                <div class="profile-info">
+                    <p><strong>เบอร์โทร :</strong> 092-624-4645</p>
+                    <p><strong>ช่องทางติดต่อ :</strong> IG : caesarrrrrr</p>
+                    <p><strong>อายุ :</strong> 20 ปี</p>
+                    <p><strong>รหัสนักศึกษา :</strong> 66010133</p>
+                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
+                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
+                </div>
+            </div>
+            <!-- Card Profile 4 -->
+            <div class="card-profile">
+                <img src="img/S__320479236_0.jpg" alt="Profile 4">
+                <p><strong>ชื่อ :</strong> ณัฐพัชร์</p>
+                <p><strong>นามสกุล :</strong> รัตนนุวงศ์</p>
+                <div class="profile-info">
+                    <p><strong>เบอร์โทร :</strong> 082-535-9154</p>
+                    <p><strong>ช่องทางติดต่อ :</strong> IG : np_nickufo</p>
+                    <p><strong>อายุ :</strong> 20 ปี</p>
+                    <p><strong>รหัสนักศึกษา :</strong> 66010256</p>
+                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
+                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
+                </div>
+            </div>
+            <!-- Card Profile 5 -->
+            <div class="card-profile">
+                <img src="img/S__320479237_0.jpg" alt="Profile 5">
+                <p><strong>ชื่อ :</strong> ธนวัฒน์</p>
+                <p><strong>นามสกุล :</strong> ใจยง</p>
+                <div class="profile-info">
+                    <p><strong>เบอร์โทร :</strong> 080-229-8680</p>
+                    <p><strong>ช่องทางติดต่อ :</strong> IG : flipfoandnobrain</p>
+                    <p><strong>อายุ :</strong> 20 ปี</p>
+                    <p><strong>รหัสนักศึกษา :</strong> 66010338</p>
+                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
+                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
+                </div>
+            </div>
+        </section>
+        <a href="project.html" class="btn-project">Project Meltme The Candle</a>
 
-    <div id="taskList"></div>
+    </main>
 
-    
-<!-- <button id="addTask" onclick="location.href='add_task.html'">+</button> -->
-<button class="icon-btn add-btn" onclick="location.href='add_task.html'">
-    <div class="add-icon"></div>
-    <div class="btn-txt">Add</div>
-</button>
-
-
-<div>
-</div>
-    <nav class="navbar">
-        <a href="index.html" class="nav-item active">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-        </a>
-        <a href="analytic.html" class="nav-item">
-            <i class="fas fa-chart-bar"></i>
-            <span>Analytics</span>
-        </a>
-        <a href="Todo.html" class="nav-item">
-            <i class="fas fa-clipboard-list"></i>
-            <span>To-Do-list</span>
-        </a>
-    </nav>
-
-    <script src="js/addHome.js"></script>
+    <footer class="footer">
+        <p>&copy; 2025 Profile Page. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
