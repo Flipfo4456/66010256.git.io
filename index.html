@@ -1,130 +1,172 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <style>
-        .card-profile {
-            position: relative;
-            width: 200px;
-            text-align: center;
-            margin-bottom: 80px; /* เพิ่มระยะห่างเพื่อให้มีที่สำหรับข้อมูล */
-        }
-
-        .profile-info {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            position: absolute;
-            top: 100%; /* ให้ข้อมูลแสดงผลใต้การ์ด */
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgb(0, 0, 0);
-            padding: 10px;
-            border-radius: 5px;
-            width: 90%;
-        }
-
-        .card-profile:hover .profile-info {
-            opacity: 1;
-        }
-    </style>
+    <title>Group | 9</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <header class="head">
-        <h1>Profile</h1>
-        <button class="menu-toggle">☰</button>
-        <nav>
-            <ul class="nav-links">
-                <li><button>Home</button></li>
-                <li><button>About</button></li>
-                <li><button>Services</button></li>
-                <li><button>Contact</button></li>
-               
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Group 9 Profile</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <!-- edit -->
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Our Project</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="report.html">Report issues</a>
+              </li>
+              
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="main">
-            <!-- Card Profile 1 -->
-            <div class="card-profile">
-                <img src="img/S__320479238_0.jpg" alt="Profile 1">
-                <p><strong>ชื่อ :</strong> กฤษณกร</p>
-                <p><strong>นามสกุล :</strong> พันธ์เสงี่ยม</p>
-                <div class="profile-info">
-                    <p><strong>เบอร์โทร :</strong> 094-905-7555</p>
-                    <p><strong>ช่องทางติดต่อ :</strong> Line : folk1590</p>
-                    <p><strong>อายุ :</strong> 20 ปี</p>
-                    <p><strong>รหัสนักศึกษา :</strong> 66010032</p>
-                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
-                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
-                </div>
-            </div>
-            <!-- Card Profile 2 -->
-            <div class="card-profile">
-                <img src="img/S__320479239_0.jpg" alt="Profile 2">
-                <p><strong>ชื่อ :</strong> ก้องภพ</p>
-                <p><strong>นามสกุล :</strong> นาราอัสนีกร</p>
-                <div class="profile-info">
-                    <p><strong>เบอร์โทร :</strong> 061-524-3000</p>
-                    <p><strong>ช่องทางติดต่อ :</strong> Line : pangpond910</p>
-                    <p><strong>อายุ :</strong> 20 ปี</p>
-                    <p><strong>รหัสนักศึกษา :</strong> 66010042</p>
-                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
-                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
-                </div>
-            </div>
-            <!-- Card Profile 3 -->
-            <div class="card-profile">
-                <img src="img/S__320479234_0.jpg" alt="Profile 3">
-                <p><strong>ชื่อ :</strong> จีราวิวัฒน์</p>
-                <p><strong>นามสกุล :</strong> วิหะคานนท์</p>
-                <div class="profile-info">
-                    <p><strong>เบอร์โทร :</strong> 092-624-4645</p>
-                    <p><strong>ช่องทางติดต่อ :</strong> IG : caesarrrrrr</p>
-                    <p><strong>อายุ :</strong> 20 ปี</p>
-                    <p><strong>รหัสนักศึกษา :</strong> 66010133</p>
-                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
-                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
-                </div>
-            </div>
-            <!-- Card Profile 4 -->
-            <div class="card-profile">
-                <img src="img/S__320479236_0.jpg" alt="Profile 4">
-                <p><strong>ชื่อ :</strong> ณัฐพัชร์</p>
-                <p><strong>นามสกุล :</strong> รัตนนุวงศ์</p>
-                <div class="profile-info">
-                    <p><strong>เบอร์โทร :</strong> 082-535-9154</p>
-                    <p><strong>ช่องทางติดต่อ :</strong> IG : np_nickufo</p>
-                    <p><strong>อายุ :</strong> 20 ปี</p>
-                    <p><strong>รหัสนักศึกษา :</strong> 66010256</p>
-                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
-                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
-                </div>
-            </div>
-            <!-- Card Profile 5 -->
-            <div class="card-profile">
-                <img src="img/S__320479237_0.jpg" alt="Profile 5">
-                <p><strong>ชื่อ :</strong> ธนวัฒน์</p>
-                <p><strong>นามสกุล :</strong> ใจยง</p>
-                <div class="profile-info">
-                    <p><strong>เบอร์โทร :</strong> 080-229-8680</p>
-                    <p><strong>ช่องทางติดต่อ :</strong> IG : flipfoandnobrain</p>
-                    <p><strong>อายุ :</strong> 20 ปี</p>
-                    <p><strong>รหัสนักศึกษา :</strong> 66010338</p>
-                    <p><strong>คณะที่เรียน :</strong> วิศวกรรมศาสตร์</p>
-                    <p><strong>สาขาที่เรียน :</strong> ไอโอทีสารสนเทศน์เเละฟิสิกส์</p>
-                </div>
-            </div>
-        </section>
-        <a href="project.html" class="btn-project">Project Meltme The Candle</a>
+            
+          </div>
+        </div>
+      </nav>
+    <!-- ____________________END_NAV_BAR_____________________-->
+<div class="toPJ-container">
+<link rel="stylesheet" href="css/toPJ.css">
+    
+      <button type="button" class="btn" onclick="location.href='project.html'">
+        <strong>Project is here!</strong>
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+      
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
+  
+</div>
 
-    </main>
+    <section class="header">
+        <div class="cards">
+            <div class="card fo">
 
-    <footer class="footer">
-        <p>&copy; 2025 Profile Page. All Rights Reserved.</p>
-    </footer>
+                
+                <div class="image-container">
+                    <img src="img/Fo.jpg" alt="Profile Picture of C. Thanawat">
+                    
+                </div>
+                <h5 class="student-num">66010338</h5>
+                <div class="name-section">
+                    <span>Thanawat</span>
+                    <span>Chaiyong</span>
+                </div>
+    
+                  <button class="ui-btn" onclick="location.href='0338.html'">
+                    <span>
+                      Flipfo
+                    </span>
+                  </button>
+
+
+            </div>
+<!-- ....................................................................... -->
+            <div class="card folk">
+                <div class="image-container">
+                    <img src="img/folk.jpg" alt="Profile Picture of P. Krissanakorn">
+                    
+                </div>
+                <h5 class="student-num">66010032</h5>
+                <div class="name-section">
+                    <span>Krissanakorn</span>
+                    <span>Punsanguem</span>
+                   
+                </div>
+    
+                  <button class="ui-btn" onclick="location.href='0032.html'">
+                    <span>
+                    Folk°
+                    </span>
+                  </button>
+            </div>
+
+<!-- ....................................................................... -->
+
+        <div class="card bangNick">
+              <div class="image-container">
+                <img src="img/bang_nick.jpg" alt="Profile Picture of R. Natthapat">
+                
+            </div>
+            <h5 class="student-num">66010256</h5>
+            <div class="name-section">
+                <span>Natthapat</span>
+                <span>Rattananuwong</span>
+               
+            </div>
+
+              <button class="ui-btn" onclick="location.href='0256.html'">
+                <span>
+                .Nick.
+                </span>
+              </button>
+            </div>
+
+        
+<!-- ....................................................................... -->
+
+
+        <div class="card sarr">
+              <div class="image-container">
+                <img src="img/caesar.jpg" alt="Profile Picture of W. Jeerawiwat">
+    
+              </div>
+              <h5 class="student-num">66010133</h5>
+              <div class="name-section">
+                <span>Jeerawiwat</span>
+                <span>Wihatnone</span>
+  
+              </div>
+
+            <button class="ui-btn" onclick="location.href='0133.html'">
+                <span>
+                  Caecar
+                </span>
+             </button>
+          </div>
+
+          
+<!-- ....................................................................... -->
+<div class="card pond-1st-YR">
+  <div class="image-container">
+    <img src="img/pond1stYear.jpg" alt="Profile Picture of N. Kongphob">
+
+  </div>
+  <h5 class="student-num">66010042</h5>
+  <div class="name-section">
+    <span>Kongphob</span>
+    <span>Naraussaneekorn</span>
+
+  </div>
+
+<button class="ui-btn" onclick="location.href='0042.html'">
+    <span>
+      -Pond^
+    </span>
+ </button>
+</div>
+
+
+      </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
