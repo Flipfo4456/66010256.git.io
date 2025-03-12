@@ -206,3 +206,7 @@ h1{
     flex-direction: column;
     justify-items: baseline;
 }
+
+.redTeam{
+  color: red;
+}
